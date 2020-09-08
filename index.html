@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+ 
+    <!-- jquery 3.4.1 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+ 
+    <!-- sammyjs 0.7.6 -->
+    <script src="utils/sammyjs/0.7.6/sammy.js"></script>
+    <!-- 라우터 처리용 어플리케이션 -->
+    <script src="app.js"></script>
+</head>
+<body>
+    <a href="#/">홈</a><br />
+    <br />
+    <!-- 라우트 내용이 바인딩되는 div -->
+    <div id="divMain">
+    </div>
+</body>
+<script>
+    function includeHTML() { var z, i, elmnt, file, xhttp; z = document.getElementsByTagName("*"); for (i = 0; i < z.length; i++) { elmnt = z[i]; file = elmnt.getAttribute("include-html"); if (file) { xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() { if (this.readyState == 4 && this.status == 200) { elmnt.innerHTML = this.responseText; elmnt.removeAttribute("include-html"); includeHTML();
+} } xhttp.open("GET", file, true); xhttp.send(); return; } } }
+</script>
+</html>
