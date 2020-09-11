@@ -1,0 +1,55 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0px;
+    height: 100%;
+}
+#header{
+    height: 50px;
+    background-color: #d6d6d6;
+}
+#container {
+    margin-left: 18rem;
+    height: calc(100% - 100px);
+}
+#leftPanel {
+    width: 18rem;
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left:0;
+    z-index: 1;
+    float: left;
+    background-color: grey;
+}
+#centerPanel {
+    /* margin-left: 18rem; */
+    min-height: 100%;
+}
+#footer {
+    height: 50px;
+    background-color: #d6d6d6;
+}
+
+.leftHead {
+    padding: 20px;
+}
+.leftHead .elem-line {
+    width: 30px;
+    border-top: 2px solid #ffffff;
+    padding-top: 5px;
+}
+
+.leftBlock {
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.boardTable {
+    width: 100%;
+    min-width: 800px;
+    border: 1px solid #000000;
+    
+}
