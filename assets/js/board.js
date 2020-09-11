@@ -20,7 +20,6 @@ Board.prototype.document = function(){
 
                 $.each(v.powers, function(pk, pv){
                     self.powers.push(pv);
-                    console.log(pk);
                     if(pk === 0){
             			$("table tbody").append(
                             '<tr>' +
@@ -44,5 +43,9 @@ Board.prototype.document = function(){
 			alert("ERROR status :"+status+", error : "+error);
 		},
 	})
+}
+
+Board.prototype.clickEvent = function(){
+
 
 }
